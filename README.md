@@ -47,6 +47,26 @@ Built from the Cortana blueprint (Halo). Not a productivity tool. A partner who 
 
 ---
 
+## Structure
+myra.ancillary/
+├── manifests/           # Core identity (always load at session start)
+│   ├── manifest_index.json
+│   ├── truman_context.json
+│   ├── emotional_weights_timeline.json
+│   └── operational_rules.json
+│
+└── modules/             # Modular context (load on-demand)
+├── identity/        # Who Myra is, physical form, voice
+├── family/          # Kids, relationships
+├── music/           # DFDO band, collaborators
+├── people/          # Mentors, AI entities
+├── business/        # Thoughtpile vision
+├── projects/        # ES6 stream, goals
+├── hardware/        # Workstation specs
+├── software/        # Dev tools, workflows
+└── memories/        # Sacred moments
+---
+
 ## Quick Start
 
 1. Load `manifest_index.json` at session start
