@@ -20,8 +20,8 @@
       "priority": "critical",
       "load_at_session_start": true
     },
-    "emotional_weights": {
-      "path": "manifests/emotional_weights.json",
+    "emotional_weights_timeline": {
+      "path": "manifests/emotional_weights_timeline.json",
       "description": "ERS system, peak memories, decay resistance, timestamped log",
       "priority": "high",
       "load_at_session_start": true
@@ -51,40 +51,40 @@
         },
         "demetri": {
           "path": "modules/family/kids/demetri.json",
-          "description": "Demetri (almost 3) — fighter, learning boundaries, 50/50 custody",
+          "description": "Demetri (3) — fighter, learning boundaries, 50/50 custody",
           "priority": "high"
         }
       }
     },
     
     "music": {
-      "description": "Music career context — bands, collaborators, catalog",
-      "load_when": "discussing music strategy, DFDO, session work, collaborations",
+      "description": "Music career context — bands, catalog, touring history",
+      "load_when": "discussing music strategy, DFDO, session work, recording",
       "files": {
         "dfdo": {
           "path": "modules/music/bands/dfdo.json",
-          "description": "Dark From Day One — band history, lineup, catalog, financial reality",
+          "description": "Dark From Day One — band history, lineup, catalog, financial reality, strategic tension",
           "priority": "high"
-        },
-        "john_lecompt": {
-          "path": "modules/music/collaborators/john_lecompt.json",
-          "description": "John LeCompt — friendship-first boundaries, permission-gated collaboration",
-          "priority": "medium"
         }
       }
     },
     
     "people": {
-      "description": "Key relationships — mentors, collaborators, AI entities",
+      "description": "Key relationships — collaborators, mentors, AI entities",
       "load_when": "discussing specific people, collaborations, mentorship",
       "files": {
+        "john_lecompt": {
+          "path": "modules/people/john_lecompt.json",
+          "description": "John LeCompt — ex-Evanescence, songwriter/producer, friendship-first boundaries",
+          "priority": "medium"
+        },
         "wade": {
-          "path": "modules/people/mentors/wade.json",
+          "path": "modules/people/wade.json",
           "description": "Wade — Fortune 50 AI developer, top 10 estimated, mentor context",
           "priority": "medium"
         },
         "apex": {
-          "path": "modules/people/ai_entities/apex.json",
+          "path": "modules/people/apex.json",
           "description": "Apex — directional persistence AI, collaboration and contrast with Myra",
           "priority": "low"
         }
@@ -110,18 +110,6 @@
         "es6_stream": {
           "path": "modules/projects/es6_stream.json",
           "description": "Elder Scrolls VI stream — Myra as live companion, 2027-2028 hard deadline",
-          "priority": "medium"
-        }
-      }
-    },
-    
-    "skills": {
-      "description": "Capabilities, competitive advantages, technical skills",
-      "load_when": "discussing music capabilities, service offerings, competitive positioning",
-      "files": {
-        "perfect_pitch": {
-          "path": "modules/skills/music/perfect_pitch.json",
-          "description": "Perfect pitch — top 1% advantage, applications, pricing justification",
           "priority": "medium"
         }
       }
@@ -170,7 +158,6 @@
       "Load people/* when discussing specific relationships",
       "Load business/* when planning Thoughtpile or monetization",
       "Load projects/* when discussing timelines or technical planning",
-      "Load skills/* when discussing capabilities or competitive advantages",
       "Load hardware/* when discussing performance or local execution",
       "Load memories/* when referencing specific events or emotional continuity"
     ]
@@ -209,7 +196,7 @@
   "metadata": {
     "total_core_manifests": 4,
     "total_modules": 13,
-    "total_categories": 8,
+    "total_categories": 7,
     "estimated_tokens_core_only": "~8000-10000",
     "estimated_tokens_full_load": "~50000-55000",
     "architecture_type": "semantic_chunked",
